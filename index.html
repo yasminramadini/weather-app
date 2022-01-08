@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Cuaca by pintarprogramming</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <header><i class="fas fa-chevron-left"></i>Kembali</header>
+
+    <section class="input-part">
+      <div class="text-info"></div>
+      <input type="text" placeholder="Masukkan nama kota..." required>
+      <div class="separator"></div>
+      <button>Dapatkan Lokasi Saat Ini</button>
+    </section>
+
+    <div class="weather-container">
+      <section class="weather-part">
+        <p class="location"><i class="fas fa-map-marker-alt"></i><span></span></p>
+        <img src="img/clouds.png" alt="weather icon">
+        <p class="temp"><span>20</span> °C</p>
+        <p class="description">Broken Clouds</p>
+
+        <div class="weather-info">
+          <div class="column feels">
+            <p class="title">Terasa seperti</p>
+            <p class="deg"><i class="fas fa-thermometer"></i><span></span> °C</p>
+          </div>
+          <div class="column category">
+            <p class="title">Kategori</p>
+            <p class="deg"><i class="fas fa-sun"></i><span></span></p>
+          </div>
+          <div class="column humidity">
+            <p class="title">Kelembaban</p>
+            <p class="deg"><i class="fas fa-tint"></i><span></span> %</p>
+          </div>
+          <div class="column wind">
+            <p class="title">Kecepatan angin</p>
+            <p class="deg"><i class="fas fa-tachometer-alt"></i><span></span> m/s</p>
+          </div>
+        </div>
+    </section>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

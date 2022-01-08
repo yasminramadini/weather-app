@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,100&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  background: #2f8bfb;
+  color: #fff;
+  width: 400px;
+  border-radius: 7px;
+}
+
+.wrapper.active .input-part {
+  display: none;
+}
+
+.wrapper.active .weather-container {
+  display: block;
+}
+
+.wrapper.active header {
+  display: block;
+}
+
+.wrapper header {
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  display: none;
+}
+
+.wrapper header i {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.wrapper .input-part {
+  padding: 30px 20px;
+  text-align: center;
+  text-align: center;
+  font-size: 23px;
+}
+
+.input-part .text-info {
+  border-radius: 7px;
+  padding: 0.7rem;
+  display: none;
+  font-size: 1.2rem;
+}
+
+.input-part .text-info.pending {
+  background: rgb(200, 252, 200);
+  border-radius: 7px;
+  color: rgb(37, 179, 37);
+  padding: 0.7rem;
+  display: block;
+}
+
+.input-part .text-info.error {
+  background: rgb(255, 196, 196);
+  border-radius: 7px;
+  color: rgb(182, 34, 34);
+  padding: 0.7rem;
+  display: block;
+}
+
+.input-part input {
+  background: #fff;
+  border: 1px solid #777;
+  outline: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  margin: 30px 0 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #777;
+}
+
+.input-part input:is(:valid, :focus) {
+  border: 4px solid #46ccf7;
+  box-shadow: 0 0 2rem #46ccf7;
+}
+
+.input-part button {
+  background: #46ccf7;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  color: #fff;
+  border: none;
+  width: 100%;
+  margin-top: 0.7rem;
+}
+
+.input-part button:hover {
+  background: #46cbf775;
+  cursor: pointer;
+}
+
+.input-part .separator {
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.input-part .separator::before {
+  content: 'OR';
+  color: #fff;
+  background: #2f8bfb;
+  padding: 0 0.8rem;
+  font-size: 17px;
+  color: #ddd;
+}
+
+.wrapper .weather-container {
+  display: none;
+}
+
+.wrapper .weather-part {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-part img {
+  width: 14rem;
+}
+
+.weather-part .location {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.weather-part .location i {
+  margin-right: 1rem;
+}
+
+.weather-part .temp {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.weather-part .description {
+  font-size: 1.5rem;
+}
+
+.weather-part .weather-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.weather-part .weather-info .column {
+  background: #fff;
+  color: #222;
+  padding: 0.7rem;
+  border-radius: 7px;
+  flex: 1 1 40%;
+}
+
+.weather-info .column .deg {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.weather-info .column .deg i {
+  color: #2f8bfb;
+  margin-right: 0.5rem;
+}
