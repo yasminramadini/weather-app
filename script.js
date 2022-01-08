@@ -21,8 +21,8 @@ function requestAPI(url) {
   textInfo.classList.add('pending');
   textInfo.innerHTML = "Mendapatkan lokasi...";
 
-  fetch(url);
-  .then(response => response.json());
+  fetch(url)
+  .then(response => response.json())
   .then(result => weatherInfo(result));
 }
 
